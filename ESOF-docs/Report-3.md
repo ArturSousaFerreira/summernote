@@ -63,7 +63,6 @@ dependencies both in black-box and white-box views.
 <a name="DeploymentView"> </a>
 ## Deployment View
 
-
 [Go to top](#TOP)
 <a name="ProcessView"> </a>
 ## Process View
