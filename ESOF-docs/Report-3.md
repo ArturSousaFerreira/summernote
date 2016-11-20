@@ -42,7 +42,7 @@ A package diagram depicts the dependencies between the packages that make up a m
 
 ![LogicalView](resources/logical-view.png?raw=true "Logical View")
 
-The diagram we have used, has blue and grey colored packages. This is to denote if the package requires more code(grey). As we see, the logical view gives a view to the end user about all the functional requirements of the summernote software including installation, customization, features and integration.
+The diagram we have used, has blue and grey colored packages. This is to denote if the package requires more code(grey). As we see, the logical view gives a view to the end user about all the functional requirements of the summernote software including installation, customization, features and integration. Hence, the Logical View gives a good idea about the software.
 
 [Go to top](#TOP)
 <a name="DevelopmentView"> </a>
