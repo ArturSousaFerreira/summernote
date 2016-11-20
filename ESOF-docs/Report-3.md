@@ -60,8 +60,7 @@ represent the physical-level artifacts that are built by the team.
 
 Component Diagrams are used to represent the Implementation View. These diagrams
 show different components, the ports available and the dependencies on the environment
-in terms of provided and required interfaces. UML 2 has improved the Component
-Diagrams specifically with the interfaces and ports. The components can be tied to the
+in terms of provided and required interfaces. The components can be tied to the
 classes and composite structures that realize these components. These diagrams can
 now be used to precisely represent the software components built in a system and their
 dependencies both in black-box and white-box views.
@@ -109,6 +108,6 @@ Just one more note to mention that it is possible before writing something in th
 | Artur Sousa Ferreira            | ei12168@fe.up.pt     |      25%     |
 | José Filipe de Monteiro Peixoto | ei12134@fe.up.pt     |      25%     |
 | Nuno Miguel Rainho Valente      | up200204376@fe.up.pt |      25%     |
-| Urvish Sanjay Desai                    | up201602683@fe.up.pt |      25%     |
+| Urvish Sanjay Desai             | up201602683@fe.up.pt |      25%     |
 
 [Go to top](#TOP)
