@@ -1,5 +1,6 @@
-# Report 3 - Software Design 
 <a name="TOP"> </a>
+# Report 3 - Software Design 
+
 ## Index
 1. [Introduction](#Introduction)
 2. [Logical View](#LogicalView)
@@ -29,11 +30,19 @@ Following traditional building architecture, a 'software architectural style' is
 
 There are many recognized architectural patterns and styles but we think that in this case is being used the `Model View Controller` architectural pattern and we begin to explain: this model separates application data, inside the model, from graphical presentation components - the view, and input-processing logic - the controller. In Summernote project, a user, for example, inputs text, from the keyboard and formats this text using the mouse by clicking on a editor button. The program stores this text and format information into a series of data structures, then displays this information on screen for the user to read what has been inputted. When a user provides some input, the controller modifies the model's data with the given input. When the model changes, it notifies the view of the change and the view can update its presentation with the changed data. A basic example is when the application displays characters using a particular font. 
 
-This model have some advantages because we can see by the last example announced that it allows the data and its representation to change independently and supports presentation, once we can have the text wrote in different fonts and other styles without changing that text. 
+This model has some advantages because we can see by the last example announced that it allows the data and its representation to change independently and supports presentation, once we can have the text wrote in different fonts and other styles without changing that text. 
 
 [Go to top](#TOP)
 <a name="LogicalView">
 ## Logical View
+
+The logical view model shows the key abstractions in the system as object or object classes, or their packages. It is concerned with the functionality that the system provides to end-users. UML diagrams used to represent the logical view include package diagrams, activity diagrams, class diagrams, and state diagrams. Here we have used package diagrams for the representation of the logical view of Summernote project model.
+
+A package diagram depicts the dependencies between the packages that make up a model. It considers the functional requirements that the system should provide to its users in terms of services. The logical view is designed to address the end user's concerns about ensuring that all of their desired functionality is captured by the system. In our system, we have mapped the required functionality to the components that provide that functionality.
+
+![LogicalView](resources/logical-view.png?raw=true "Logical View")
+
+The diagram we have used, has blue and grey colored packages. This is to denote if the package requires more code(grey). As we see, the logical view gives a view to the end user about all the functional requirements of the summernote software including installation, customization, features and integration. Hence, the Logical View gives a good idea about the software.
 
 [Go to top](#TOP)
 <a name="DevelopmentView"> </a>
