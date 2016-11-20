@@ -63,6 +63,12 @@ dependencies both in black-box and white-box views.
 <a name="DeploymentView"> </a>
 ## Deployment View
 
+The deployment view encompasses the nodes that form the system’s hardware topology on which the system executes; it focuses on distribution, communication and provisioning. The software executes on a network of computers, or processing nodes. The various elements such as processes, tasks and objects need to be mapped to the nodes on which they execute.
+
+The following deployment view attempts to illustrate a scenario where the hardware components are type mapped nodes representing the web browser interaction with a web page containing at least one instance of the Summernote WYSIWYG text editor. The browser makes multiple HTTP/HTTPS GET requests to the web server hosting the page in order to download the page resources, including summernote's javascript code and its required jQuery and bootstrap dependency libraries. Some web resources including the javascript and css dependencies might get downloaded from alternative web servers like Cloudflare or some other content distribution network server. The code is then parsed locally by the javascript engine of the user's web browser finally displaying the summernote's text editing input box and toolbar. Usually after the user inputs in the text box it is possible to submit that information to the original web server and from there the information might get stored in a server database.
+
+![DeploymentView](resources/deployment-view.png?raw=true "Deployment View")
+
 [Go to top](#TOP)
 <a name="ProcessView"> </a>
 ## Process View
