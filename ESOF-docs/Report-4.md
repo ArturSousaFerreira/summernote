@@ -58,9 +58,37 @@ testable components with good observability.
 
 ##### 3. Isolateability
 ##### 4. Separation of concerns
+
+The separation of concerns is keeping the code for each of these concerns 
+separate. Changing the interface should not require changing the business 
+logic code, and vice versa.
+
+Model-View-Controller (MVC) design pattern is an excellent example of 
+separating these concerns for better software maintainability.
+
 ##### 5. Understandability
+
+
 ##### 6. Heterogeneity
 
+Summernote is an open-source library under the MIT license as had been said 
+previously, and have some contributions on github from various developers.
+It represent a risk of embedding the modified code submitted in a pull request,
+and made the integration with the existent code so is necessary to ensure that
+it remains globally functional.
+
+By one side, the unit tests allows the owners and the contributors of 
+Summernote's project guarantee the correct operation of library components and
+the right flow of development. 
+On the other hand, it is important to verify if the integration of the
+various components is done correctly through integration tests. As already
+mentioned, the Grunt tool is used to automate Unit tests and the 
+Travis-CI tool is used to automate
+Integration tests.
+
+
+It is verified that the use of a public GitHub repository open to
+any collaborator encourages a greater heterogeneity of the test tools used.
 
 [Go to top](#TOP)
 <a name="TestStatisticsandanalytics">
