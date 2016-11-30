@@ -40,12 +40,21 @@ supporting methodology to help them address component controllability in all pha
 
 ##### 2. Observability
 
-Observability determines the work it takes to set up and run test cases and the extent to which the response of the system under test (SUT) to test cases can be verified.
+Software observability indicates how easy it is to observe a program based on its operational behaviors, input parameter values, and actual outputs for 
+a test case. The same concept is also applicable to software components to check observability based on component interfaces to see the mapping 
+relationships between the inputs and corresponding outputs. 
+Software component is observable if distinct outputs are generated from distinct inputs so that, if a test input is repeated, the output is the same. 
+If the outputs are not the same, then the component is dependent on hidden states not identified by the tester - input inconsistency. 
+In our view, component observability refers to the degree to which components are designed to facilitate the monitoring and observation of component 
+functions and behaviors of component tests. Component observability is twofold: 
 
-What do we have to do to determine test pass/fail?
-How hard (expensive) is it to do this?
-Does the SUT make it impractical to fully determine test results ?
-Do we know enough to decide test pass/fail?
+- check the mapping relationships between inputs and corresponding outputs for each test. This could be done in two different stages. A test design 
+review is the first stage, in which all component tests are verified to find the hidden inputs and missing outputs, and incorrect mapping relationships 
+between inputs and outputs. Test result verification during component testing is the second stage, where an effective test tool could be an ideal 
+solution to check this in a systematic manner. 
+- track and monitor all component tests and test results. There are two ways to achieve this goal. An effective component test bed is a natural 
+solution. To reduce the testing cost in setting up a specific component test bed for each component, we need to find effective methods to construct 
+testable components with good observability.
 
 ##### 3. Isolateability
 ##### 4. Separation of concerns
