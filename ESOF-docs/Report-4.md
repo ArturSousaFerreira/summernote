@@ -10,6 +10,20 @@
 <a name="SoftwareTestabilityandReviews"> </a>
 ## Software Testability and Reviews
 
+There are many definitions of the software testability and different papers have given
+different types of software testability factors and metrics on different perspective. 
+
+We are the opinion that software testability is the degree to which a software
+artifact facilitates testing in a given test context. It is directly related to
+test effort reduction. A lack of testability, like other design faults, is expensive
+to repair when detected late during software development. Therefore, testability
+should be addressed already during reviews of early development artifacts.
+
+It is really difficult task to get all the clear view of factors that can
+affect the software testability with their dominating degree on the software system.
+Even though, we collected six of the factors that affect the software
+testability, presented below.
+
 ##### 1. Controllability
 
 Controllability is one of the most important factors of testability. Controllability is the ease of producing a specific output from a specific 
