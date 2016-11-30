@@ -2,10 +2,19 @@
 # Report 4 - Verification and Validation 
 
 ## Index
-1. [Software Testability and Reviews](#SoftwareTestabilityandReviews)
-2. [Test Statistics and analytics](#TestStatisticsandanalytics)
-3. [Identify a new bug and/or correct a bug](#IdentifyCorrectBug)
-4. [Group Members Identification](#Group)
+1. [Introduction](#Introduction)
+2. [Software Testability and Reviews](#SoftwareTestabilityandReviews)
+3. [Test Statistics and analytics](#TestStatisticsandanalytics)
+4. [Identify a new bug and/or correct a bug](#IdentifyCorrectBug)
+5. [Group Members Identification](#Group)
+
+<a name="Introduction"> </a>
+## Introduction
+
+In this report we will look at Summernote with regard to software testing. In the first section we will analyze the testability of 
+the project, that is, how easy it is to test the different components of the text editor, and how these test methods could be improved. Next, some test 
+statistics of the project will be presented, regarding number of tests, coverage, among other aspects. Finally, the process of correcting a bug 
+reported in the project will be reported.
 
 <a name="SoftwareTestabilityandReviews"> </a>
 ## Software Testability and Reviews
