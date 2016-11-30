@@ -11,10 +11,9 @@
 <a name="Introduction"> </a>
 ## Introduction
 
-In this report we will look at Summernote with regard to software testing. In the first section we will analyze the testability of 
-the project, that is, how easy it is to test the different components of the text editor, and how these test methods could be improved. Next, some test 
-statistics of the project will be presented, regarding number of tests, coverage, among other aspects. Finally, the process of correcting a bug 
-reported in the project will be reported.
+In this report we will look at Summernote with concern to software testing. In the first section we will analyze the testability of the project, how 
+easy it is to test the different components of the text editor, and how these test methods could be improved. Next, some test statistics of the project 
+will be presented, number of tests, coverage, among other aspects. Finally, the process of correcting a bug reported in the project will be reported.
 
 <a name="SoftwareTestabilityandReviews"> </a>
 ## Software Testability and Reviews
