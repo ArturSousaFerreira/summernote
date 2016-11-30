@@ -24,6 +24,7 @@ affect the software testability with their dominating degree on the software sys
 Even though, we collected six of the factors that affect the software
 testability, presented below.
 
+
 ##### 1. Controllability
 
 Controllability is one of the most important factors of testability. Controllability is the ease of producing a specific output from a specific 
