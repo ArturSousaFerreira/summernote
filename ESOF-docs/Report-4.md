@@ -71,6 +71,21 @@ solution. To reduce the testing cost in setting up a specific component test bed
 testable components with good observability.
 
 ##### 3. Isolateability
+
+Isolateablity is the degree to which the component under test can be tested in isolation.
+
+Building and testing each function in isolation gives a more accurate idea in case of error. If we just hope to see everything work out at the end, we 
+will see that in case of error, testing and debugging will be a painful process. When problems are encountered, it can be difficult to figure out where 
+in the hierarchy of functions that originated.
+
+It is much better if each routine or class can be exercised as soon as it is written, and before being combined with other parts.
+
+If we can control the inputs and observe the outputs of a single function, it is relatively easy to find out what this function did. If we can only 
+observe the operation of the entire program, it can be very difficult to find out where an incorrect result came from.
+
+There may be some components that can not be tested in perfect isolation but if there is a partial ordering of functionality tests that allows us to 
+test all other subcomponents first, we can be sure that new problems are in the new code.
+
 ##### 4. Separation of concerns
 
 The separation of concerns is keeping the code for each of these concerns 
