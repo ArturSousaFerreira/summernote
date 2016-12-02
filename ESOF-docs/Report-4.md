@@ -35,11 +35,12 @@ testability, presented below.
 
 ##### 1. Controllability
 
-Controllability is one of the most important factors of testability. Controllability is the ease of producing a specific output from a specific 
-input—related to the effective coverage of the declared output domain from the input domain. In other words, it is the ability to control input and 
+Controllability is one of the most important factors of testability.
+Controllability is the ease of producing a specific output from a specific input—related to the effective coverage of the declared output domain from 
+the input domain. In other words, it is the ability to control input and 
 execution of a component/software under test as required for testing.
 
-Analyzing Summernote, we can define controllability as the extent to which a component is constructed to provide component control capability to 
+We can define controllability as the extent to which a component is constructed to provide component control capability to 
 facilitate the control of components. Component control capability includes the following types:
 
 - Component environment control: This refers to the built-in component capability that supports component environment installation, setup, and 
@@ -60,6 +61,8 @@ high controllability. The major challenge for them is that they are used to appl
 certain level to meet the specific requirements for program control and test control. They need well-defined software controllability concepts and 
 supporting methodology to help them address component controllability in all phases of a component-based software engineering process. 
 
+Summernote is composed of several functionalities that are divided into well-defined and separate functions and modules. Its controllability depends on 
+the module itself, but overall it is large, and it is easy to predict for most cases all possible situations.
 
 ##### 2. Observability
 
@@ -79,6 +82,11 @@ solution to check this in a systematic manner.
 solution. To reduce the testing cost in setting up a specific component test bed for each component, we need to find effective methods to construct 
 testable components with good observability.
 
+
+In the case of Summernote, we conclude that the observability of test results when applied to these "core" modules of the project is excellent because 
+it is easy to interpret. In the case of modules developed by external contributors, the tests seem to be somewhat optional, so their observability 
+depends on the technique used to implement them.
+
 ##### 3. Isolateability
 
 Isolateablity is the degree to which the component under test can be tested in isolation.
@@ -94,6 +102,9 @@ observe the operation of the entire program, it can be very difficult to find ou
 
 There may be some components that can not be tested in perfect isolation but if there is a partial ordering of functionality tests that allows us to 
 test all other subcomponents first, we can be sure that new problems are in the new code.
+
+Determining an overall degree of isolateability for Summernote would be complicated because it is difficult to predict in which cases isolateability is 
+ideal or not, but the insulation of the various components under test seems good.
 
 ##### 4. Separation of concerns
 
