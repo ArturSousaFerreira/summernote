@@ -40,26 +40,10 @@ Controllability is the ease of producing a specific output from a specific input
 the input domain. In other words, it is the ability to control input and 
 execution of a component/software under test as required for testing.
 
-We can define controllability as the extent to which a component is constructed to provide component control capability to 
-facilitate the control of components. Component control capability includes the following types:
-
-- Component environment control: This refers to the built-in component capability that supports component environment installation, setup, and 
-deployment.
-- Component execution control: This refers to the built-in component execution control capability that enables executions of a component in different 
-modes, such as test mode, normal function mode, and control mode. With this capability, users and testers can start, restart, stop, pause, and abort a program execution as they wish. 
-- Component state-based behavior control: This refers to the built-in capability that facilitates the control of component state-based behavior, such 
-as resetting component states, triggering a state transaction from one state to another. 
-- Component test control: This refers to the built-in capability that facilitates the control of component tests through component interfaces. Setting 
-up different input parameter data for component tests is a typical example. 
-- Component function feature control: This refers to the built-in capability that facilitates the selection and configuration of component functional 
-features. It is only applicable to software components with customizable functional features that allow component users to select and configure its 
-features based on their needs.
-
-Since these control capabilities are essential for supporting component testing and operations, component controllability is an important contributing 
-factor for component testability. To increase component controllability, component developers need to learn how to construct software components with 
-high controllability. The major challenge for them is that they are used to applying specific approaches to supporting program controllability at a 
-certain level to meet the specific requirements for program control and test control. They need well-defined software controllability concepts and 
-supporting methodology to help them address component controllability in all phases of a component-based software engineering process. 
+To increase component controllability, component developers need to learn how to construct software components with high controllability. The major 
+challenge for them is that they are used to applying specific approaches to supporting program controllability at a certain level to meet the specific 
+requirements for program control and test control. They need well-defined software controllability concepts and supporting methodology to help them 
+address component controllability in all phases of a component-based software engineering process. 
 
 Summernote is composed of several functionalities that are divided into well-defined and separate functions and modules. Its controllability depends on 
 the module itself, but overall it is large, and it is easy to predict for most cases all possible situations.
@@ -71,17 +55,6 @@ a test case. The same concept is also applicable to software components to check
 relationships between the inputs and corresponding outputs. 
 Software component is observable if distinct outputs are generated from distinct inputs so that, if a test input is repeated, the output is the same. 
 If the outputs are not the same, then the component is dependent on hidden states not identified by the tester - input inconsistency. 
-In our view, component observability refers to the degree to which components are designed to facilitate the monitoring and observation of component 
-functions and behaviors of component tests. Component observability is twofold: 
-
-- check the mapping relationships between inputs and corresponding outputs for each test. This could be done in two different stages. A test design 
-review is the first stage, in which all component tests are verified to find the hidden inputs and missing outputs, and incorrect mapping relationships 
-between inputs and outputs. Test result verification during component testing is the second stage, where an effective test tool could be an ideal 
-solution to check this in a systematic manner. 
-- track and monitor all component tests and test results. There are two ways to achieve this goal. An effective component test bed is a natural 
-solution. To reduce the testing cost in setting up a specific component test bed for each component, we need to find effective methods to construct 
-testable components with good observability.
-
 
 In the case of Summernote, we conclude that the observability of test results when applied to these "core" modules of the project is excellent because 
 it is easy to interpret. In the case of modules developed by external contributors, the tests seem to be somewhat optional, so their observability 
