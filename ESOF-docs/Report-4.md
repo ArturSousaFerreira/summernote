@@ -104,8 +104,8 @@ One of the most important principle in Software Engineering is the Separation of
 that overlap in functionality as little as possible. It is so central that it appears in many different forms in the evolution of all methodologies,
 programming languages and best practices.
 
-It is interesting to note that Dijkstra mentions the importance of SoC in 1974: `separation of concerns … even if not perfectly possible is yet the only available
-technique for effective ordering of one’s thoughts`.
+It is interesting to note that Dijkstra mentions the importance of SoC in 1974: `separation of concerns ... even if not perfectly possible is yet the only available
+technique for effective ordering of one's thoughts`.
 
 As we already said in [previous report](Report-3.md/#architecturel-pattern) this project seems to follow an architectural design named 
 the Model-View-Controller, MVC, and this design pattern is an excellent example of separating these concerns for better software maintainability.
@@ -137,9 +137,9 @@ ensure that it remains globally functional.
 By one side, the unit tests allows the owners and the contributors of Summernote's project guarantee the correct operation of library components
 and the right flow of development. On the other hand, it is important to verify if the integration of the various components is done correctly 
 through integration tests. As already mentioned, the Grunt tool is used to automate Unit tests and the Travis-CI tool is used to automate 
-Integration tests.
+Integration tests. In the chapter 2 we'll show the results obtained with this tools. 
 
-It is verified that the use of a public GitHub repository open to any collaborator encourages a greater heterogeneity of the test tools used.
+It is verified by us that the use of a public GitHub repository open to any collaborator encourages a greater heterogeneity of the test tools used.
 
 [Go to top](#TOP)
 <a name="TestStatisticsandanalytics">
