@@ -98,67 +98,49 @@ test all other subcomponents first, we can be sure that new problems are in the 
 
 ##### 4. Separation of concerns
 
-The separation of concerns is keeping the code for each of these concerns 
-separate. Changing the interface should not require changing the business 
-logic code, and vice versa.
+The separation of concerns is keeping the code for each of these concerns separate. Changing the interface should not require changing the business logic 
+code, and vice versa. 
 
-Model-View-Controller (MVC) design pattern is an excellent example of 
-separating these concerns for better software maintainability.
+One of the most important principle in Software Engineering is the Separation of Concerns (SoC): the idea that a software system must be decomposed into parts
+that overlap in functionality as little as possible. It is so central that it appears in many different forms in the evolution of all methodologies,
+programming languages and best practices.
+
+It is interesting to note that Dijkstra mentions the importance of SoC in 1974: `separation of concerns … even if not perfectly possible is yet the only available
+technique for effective ordering of one’s thoughts`.
+
+As we already said in [previous report](Report-3.md/#architecturel-pattern) this project seems to follow an architectural design named 
+the Model-View-Controller, MVC, and this design pattern is an excellent example of separating these concerns for better software maintainability.
 
 ##### 5. Understandability
 
-Software systems tend to depart more and more from the
-principle of simplicity and become increasingly complex.
-The increase in size and complexity of software drastically
-affects several quality attributes, especially understandability
-and maintainability. Software developers and
-maintainers need to read and understand source programs
-and other documents of software. The significance
-of understandability is very obvious that can be perceived
-as `If we can't learn something, we won't understand it. If
-we can't understand something, we can't use it - at least
-not well enough to avoid creating a money pit. We can't
-maintain a system that we don't understand - at least not
-easily. And we can't make changes to our system if we
-can't understand how the system as a whole will work
-once the changes are made`. Understandability of
-software documents is thus important as `the better we
-know what the thing is supposed to do, the better we can
-test for it`.
+Software systems tend to depart more and more from the principle of simplicity and become increasingly complex.
 
-Software understandability is vital and one of the most
-significant components of the software development. The
-lack of understandability aspect often leads to false interpretation
-that may in turn lead to ambiguities, misunderstanding
-and hence to faulty development results. 
-It plays an important role as far as the issue of delivering
-quality software is concerned. Therefore, Understandability
-is obviously relevant and significant in the
-context of software testability. The model has been validated
-theoretically as well as empirically using experimental
-try-out. 
+The increase in size and complexity of software drastically affects several quality attributes, especially understandability and maintainability. 
 
+Software developers and maintainers need to read and understand source programs and other documents of software. The significance of understandability is 
+very obvious that can be perceived as `If we can't learn something, we won't understand it. If we can't understand something, we can't use it - at least 
+not well enough to avoid creating a money pit. We can't maintain a system that we don't understand - at least not easily. And we can't make changes to 
+our system if we can't understand how the system as a whole will work once the changes are made`. Understandability of software documents is thus 
+important as `the better we know what the thing is supposed to do, the better we can test for it`.
+
+Software understandability is vital and one of the most significant components of the software development. The lack of understandability aspect often 
+leads to false interpretation that may in turn lead to ambiguities, misunderstanding and hence to faulty development results. It plays an important role
+as far as the issue of delivering quality software is concerned. Therefore, Understandability is obviously relevant and significant in the context of
+software testability. The model has been validated theoretically as well as empirically using experimental try-out. 
 
 ##### 6. Heterogeneity
 
-Summernote is an open-source library under the MIT license as had been said 
-previously, and have some contributions on github from various developers.
-It represent a risk of embedding the modified code submitted in a pull request,
-and made the integration with the existent code so is necessary to ensure that
-it remains globally functional.
+Summernote is an open-source library under the MIT license as had been said previously, and have some contributions on github from various developers.
 
-By one side, the unit tests allows the owners and the contributors of 
-Summernote's project guarantee the correct operation of library components and
-the right flow of development. 
-On the other hand, it is important to verify if the integration of the
-various components is done correctly through integration tests. As already
-mentioned, the Grunt tool is used to automate Unit tests and the 
-Travis-CI tool is used to automate
+It represent a risk of embedding the modified code submitted in a pull request, and made the integration with the existent code so is necessary to 
+ensure that it remains globally functional.
+
+By one side, the unit tests allows the owners and the contributors of Summernote's project guarantee the correct operation of library components
+and the right flow of development. On the other hand, it is important to verify if the integration of the various components is done correctly 
+through integration tests. As already mentioned, the Grunt tool is used to automate Unit tests and the Travis-CI tool is used to automate 
 Integration tests.
 
-
-It is verified that the use of a public GitHub repository open to
-any collaborator encourages a greater heterogeneity of the test tools used.
+It is verified that the use of a public GitHub repository open to any collaborator encourages a greater heterogeneity of the test tools used.
 
 [Go to top](#TOP)
 <a name="TestStatisticsandanalytics">
