@@ -40,13 +40,13 @@ Controllability is the ease of producing a specific output from a specific input
 the input domain. In other words, it is the ability to control input and 
 execution of a component/software under test as required for testing.
 
+Summernote is composed of several functionalities that are divided into well-defined and separate functions and modules. Its controllability depends on 
+the module itself, but overall it is large, and it is easy to predict for most cases all possible situations.
+
 To increase component controllability, component developers need to learn how to construct software components with high controllability. The major 
 challenge for them is that they are used to applying specific approaches to supporting program controllability at a certain level to meet the specific 
 requirements for program control and test control. They need well-defined software controllability concepts and supporting methodology to help them 
 address component controllability in all phases of a component-based software engineering process. 
-
-Summernote is composed of several functionalities that are divided into well-defined and separate functions and modules. Its controllability depends on 
-the module itself, but overall it is large, and it is easy to predict for most cases all possible situations.
 
 ##### 2. Observability
 
