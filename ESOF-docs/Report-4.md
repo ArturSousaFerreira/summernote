@@ -98,7 +98,8 @@ the Model-View-Controller, MVC, and this design pattern is an excellent example 
 
 Software systems tend to depart more and more from the principle of simplicity and become increasingly complex.
 
-The increase in size and complexity of software drastically affects several quality attributes, especially understandability and maintainability. 
+The increase in size and complexity of software drastically affects several quality attributes, especially maintainability and understandability. Here 
+we'll focus in understandability.
 
 Software developers and maintainers need to read and understand source programs and other documents of software. The significance of understandability is 
 very obvious that can be perceived as `If we can't learn something, we won't understand it. If we can't understand something, we can't use it - at least 
@@ -108,8 +109,9 @@ important as `the better we know what the thing is supposed to do, the better we
 
 Software understandability is vital and one of the most significant components of the software development. The lack of understandability aspect often 
 leads to false interpretation that may in turn lead to ambiguities, misunderstanding and hence to faulty development results. It plays an important role
-as far as the issue of delivering quality software is concerned. Therefore, Understandability is obviously relevant and significant in the context of
-software testability. The model has been validated theoretically as well as empirically using experimental try-out. 
+as far as the issue of delivering quality software is concerned. Therefore, understandability is obviously relevant and significant in the context of
+software testability. In Summernote's project we verify that this project continues to maintain clean code, keep architecture components balanced but
+exists some possible refactoring to do due to duplication of code. 
 
 ##### 6. Heterogeneity
 
