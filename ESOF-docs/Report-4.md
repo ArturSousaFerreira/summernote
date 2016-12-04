@@ -99,7 +99,7 @@ We ran the default build, dist and test configurations of grunt to obtain some i
 
 ![Unit-tests](resources/unit-tests.png?raw=true "Unit tests")
 
-The testing solution uses PhantomJS javascript testing framework and Karma to run the tests against selected web browsers. The results are then sent to the Coveralls website where the test results are presented in a user friendly manner including the code coverage, which at the chosen commit was approximately [70%](https://coveralls.io/builds/8964163). We also noted the [![Coverage Status](https://coveralls.io/repos/summernote/summernote/badge.svg?branch=develop&service=github)](https://coveralls.io/github/summernote/summernote?branch=develop) badge provided by the team in the `README.md` file of the summernote repository linked to the Coveralls website. It is also possible to check the code coverage in a per file basis and compare the global coverage back in time.
+The testing solution uses PhantomJS javascript testing framework and Karma to run the tests against selected web browsers. The results are then sent to the Coveralls website where the test results are presented in a user friendly manner including the code coverage, which at the chosen commit was approximately [70%](https://coveralls.io/builds/8964163). [![Coverage Status](https://coveralls.io/repos/summernote/summernote/badge.svg?branch=develop&service=github)](https://coveralls.io/github/summernote/summernote?branch=develop) badge is provided by the team in the `README.md` file of the summernote repository linked to the Coveralls website. It is also possible to check the code coverage in a per file basis and compare the global coverage back in time.
 
 ![Code-coverage](resources/code-coverage.png?raw=true "Code coverage")
 
