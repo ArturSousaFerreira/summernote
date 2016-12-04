@@ -1,0 +1,416 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for js/base/module/Handle.js</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../../prettify.css" />
+    <link rel="stylesheet" href="../../../base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../../../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="../../../index.html">all files</a> / <a href="index.html">js/base/module/</a> Handle.js
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">55.56% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>25/45</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">33.33% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>4/12</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">72.73% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>8/11</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">55.56% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>25/45</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line medium'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112
+113
+114
+115
+116
+117
+118</td><td class="line-coverage quiet"><span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">44×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">44×</span>
+<span class="cline-any cline-yes">44×</span>
+<span class="cline-any cline-yes">44×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">44×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">50×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">44×</span>
+<span class="cline-any cline-yes">44×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">44×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">44×</span>
+<span class="cline-any cline-yes">2×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">44×</span>
+<span class="cline-any cline-yes">51×</span>
+<span class="cline-any cline-yes">51×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">51×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">51×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">51×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">51×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">44×</span>
+<span class="cline-any cline-yes">51×</span>
+<span class="cline-any cline-yes">51×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">define([
+  'summernote/base/core/dom'
+], function (dom) {
+  var Handle = function (context) {
+    var self = this;
+&nbsp;
+    var $document = $(document);
+    var $editingArea = context.layoutInfo.editingArea;
+    var options = context.options;
+&nbsp;
+    this.events = {
+      'summernote.mousedown': function (we, e) {
+        <span class="missing-if-branch" title="if path not taken" >I</span>if (self.update(e.target)) {
+<span class="cstat-no" title="statement not covered" >          e.preventDefault();</span>
+        }
+      },
+      'summernote.keyup summernote.scroll summernote.change summernote.dialog.shown': function () {
+        self.update();
+      }
+    };
+&nbsp;
+    this.initialize = function () {
+      this.$handle = $([
+        '&lt;div class="note-handle"&gt;',
+        '&lt;div class="note-control-selection"&gt;',
+        '&lt;div class="note-control-selection-bg"&gt;&lt;/div&gt;',
+        '&lt;div class="note-control-holder note-control-nw"&gt;&lt;/div&gt;',
+        '&lt;div class="note-control-holder note-control-ne"&gt;&lt;/div&gt;',
+        '&lt;div class="note-control-holder note-control-sw"&gt;&lt;/div&gt;',
+        '&lt;div class="',
+        (options.disableResizeImage ? <span class="branch-0 cbranch-no" title="branch not covered" >'note-control-holder' </span>: 'note-control-sizing'),
+        ' note-control-se"&gt;&lt;/div&gt;',
+        (options.disableResizeImage ? <span class="branch-0 cbranch-no" title="branch not covered" >'' </span>: '&lt;div class="note-control-selection-info"&gt;&lt;/div&gt;'),
+        '&lt;/div&gt;',
+        '&lt;/div&gt;'
+      ].join('')).prependTo($editingArea);
+&nbsp;
+      this.$handle.on('mousedown', <span class="fstat-no" title="function not covered" >function (event) {</span>
+<span class="cstat-no" title="statement not covered" >        if (dom.isControlSizing(event.target)) {</span>
+<span class="cstat-no" title="statement not covered" >          event.preventDefault();</span>
+<span class="cstat-no" title="statement not covered" >          event.stopPropagation();</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >          var $target = self.$handle.find('.note-control-selection').data('target'),</span>
+              posStart = $target.offset(),
+              scrollTop = $document.scrollTop();
+&nbsp;
+<span class="cstat-no" title="statement not covered" >          $document.on('mousemove', <span class="fstat-no" title="function not covered" >function (event) {</span></span>
+<span class="cstat-no" title="statement not covered" >            context.invoke('editor.resizeTo', {</span>
+              x: event.clientX - posStart.left,
+              y: event.clientY - (posStart.top - scrollTop)
+            }, $target, !event.shiftKey);
+&nbsp;
+<span class="cstat-no" title="statement not covered" >            self.update($target[0]);</span>
+          }).one('mouseup', <span class="fstat-no" title="function not covered" >function (e) {</span>
+<span class="cstat-no" title="statement not covered" >            e.preventDefault();</span>
+<span class="cstat-no" title="statement not covered" >            $document.off('mousemove');</span>
+<span class="cstat-no" title="statement not covered" >            context.invoke('editor.afterCommand');</span>
+          });
+&nbsp;
+<span class="cstat-no" title="statement not covered" >          if (!$target.data('ratio')) { // original ratio.</span>
+<span class="cstat-no" title="statement not covered" >            $target.data('ratio', $target.height() / $target.width());</span>
+          }
+        }
+      });
+    };
+&nbsp;
+    this.destroy = function () {
+      this.$handle.remove();
+    };
+&nbsp;
+    this.update = function (target) {
+      var isImage = dom.isImg(target);
+      var $selection = this.$handle.find('.note-control-selection');
+&nbsp;
+      context.invoke('imagePopover.update', target);
+&nbsp;
+      <span class="missing-if-branch" title="if path not taken" >I</span>if (isImage) {
+<span class="cstat-no" title="statement not covered" >        var $image = $(target);</span>
+<span class="cstat-no" title="statement not covered" >        var pos = $image.position();</span>
+&nbsp;
+        // include margin
+<span class="cstat-no" title="statement not covered" >        var imageSize = {</span>
+          w: $image.outerWidth(true),
+          h: $image.outerHeight(true)
+        };
+&nbsp;
+<span class="cstat-no" title="statement not covered" >        $selection.css({</span>
+          display: 'block',
+          left: pos.left,
+          top: pos.top,
+          width: imageSize.w,
+          height: imageSize.h
+        }).data('target', $image); // save current image element.
+&nbsp;
+<span class="cstat-no" title="statement not covered" >        var sizingText = imageSize.w + 'x' + imageSize.h;</span>
+<span class="cstat-no" title="statement not covered" >        $selection.find('.note-control-selection-info').text(sizingText);</span>
+<span class="cstat-no" title="statement not covered" >        context.invoke('editor.saveTarget', target);</span>
+      } else {
+        this.hide();
+      }
+&nbsp;
+      return isImage;
+    };
+&nbsp;
+    /**
+     * hide
+     *
+     * @param {jQuery} $handle
+     */
+    this.hide = function () {
+      context.invoke('editor.clearTarget');
+      this.$handle.children().hide();
+    };
+  };
+&nbsp;
+  return Handle;
+});
+&nbsp;</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="http://istanbul-js.org/" target="_blank">istanbul</a> at Sun Dec 04 2016 03:43:24 GMT+0530 (IST)
+</div>
+</div>
+<script src="../../../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../../../sorter.js"></script>
+</body>
+</html>

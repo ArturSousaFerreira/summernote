@@ -1,0 +1,539 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for js/bs3/module/LinkDialog.js</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../../prettify.css" />
+    <link rel="stylesheet" href="../../../base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../../../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="../../../index.html">all files</a> / <a href="index.html">js/bs3/module/</a> LinkDialog.js
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">32.81% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>21/64</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">14.29% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>2/14</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">21.05% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>4/19</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">32.81% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>21/64</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line low'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112
+113
+114
+115
+116
+117
+118
+119
+120
+121
+122
+123
+124
+125
+126
+127
+128
+129
+130
+131
+132
+133
+134
+135
+136
+137
+138
+139
+140
+141
+142
+143
+144
+145
+146
+147
+148
+149
+150
+151
+152
+153
+154
+155
+156
+157
+158
+159</td><td class="line-coverage quiet"><span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">44×</span>
+<span class="cline-any cline-yes">44×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">44×</span>
+<span class="cline-any cline-yes">44×</span>
+<span class="cline-any cline-yes">44×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">44×</span>
+<span class="cline-any cline-yes">44×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">44×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">44×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">44×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">44×</span>
+<span class="cline-any cline-yes">2×</span>
+<span class="cline-any cline-yes">2×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">44×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">44×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">44×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">44×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">44×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">define([
+  'summernote/base/core/key'
+], function (key) {
+  var LinkDialog = function (context) {
+    var self = this;
+    var ui = $.summernote.ui;
+&nbsp;
+    var $editor = context.layoutInfo.editor;
+    var options = context.options;
+    var lang = options.langInfo;
+&nbsp;
+    this.initialize = function () {
+      var $container = options.dialogsInBody ? <span class="branch-0 cbranch-no" title="branch not covered" >$(document.body) </span>: $editor;
+&nbsp;
+      var body = '&lt;div class="form-group"&gt;' +
+                   '&lt;label&gt;' + lang.link.textToDisplay + '&lt;/label&gt;' +
+                   '&lt;input class="note-link-text form-control" type="text" /&gt;' +
+                 '&lt;/div&gt;' +
+                 '&lt;div class="form-group"&gt;' +
+                   '&lt;label&gt;' + lang.link.url + '&lt;/label&gt;' +
+                   '&lt;input class="note-link-url form-control" type="text" value="http://" /&gt;' +
+                 '&lt;/div&gt;' +
+                 (!options.disableLinkTarget ?
+                   '&lt;div class="checkbox"&gt;' +
+                     '&lt;label&gt;' + '&lt;input type="checkbox" checked&gt; ' + lang.link.openInNewWindow + '&lt;/label&gt;' +
+                   '&lt;/div&gt;' : <span class="branch-1 cbranch-no" title="branch not covered" >''</span>
+                 );
+      var footer = '&lt;button href="#" class="btn btn-primary note-link-btn disabled" disabled&gt;' + lang.link.insert + '&lt;/button&gt;';
+&nbsp;
+      this.$dialog = ui.dialog({
+        className: 'link-dialog',
+        title: lang.link.insert,
+        fade: options.dialogsFade,
+        body: body,
+        footer: footer
+      }).render().appendTo($container);
+    };
+&nbsp;
+    this.destroy = function () {
+      ui.hideDialog(this.$dialog);
+      this.$dialog.remove();
+    };
+&nbsp;
+    this.bindEnterKey = <span class="fstat-no" title="function not covered" >function ($input, $btn) {</span>
+<span class="cstat-no" title="statement not covered" >      $input.on('keypress', <span class="fstat-no" title="function not covered" >function (event) {</span></span>
+<span class="cstat-no" title="statement not covered" >        if (event.keyCode === key.code.ENTER) {</span>
+<span class="cstat-no" title="statement not covered" >          $btn.trigger('click');</span>
+        }
+      });
+    };
+&nbsp;
+    /**
+     * toggle update button
+     */
+    this.toggleLinkBtn = <span class="fstat-no" title="function not covered" >function ($linkBtn, $linkText, $linkUrl) {</span>
+<span class="cstat-no" title="statement not covered" >      ui.toggleBtn($linkBtn, $linkText.val() &amp;&amp; $linkUrl.val());</span>
+    };
+&nbsp;
+    /**
+     * Show link dialog and set event handlers on dialog controls.
+     *
+     * @param {Object} linkInfo
+     * @return {Promise}
+     */
+    this.showLinkDialog = <span class="fstat-no" title="function not covered" >function (linkInfo) {</span>
+<span class="cstat-no" title="statement not covered" >      return $.Deferred(<span class="fstat-no" title="function not covered" >function (deferred) {</span></span>
+<span class="cstat-no" title="statement not covered" >        var $linkText = self.$dialog.find('.note-link-text'),</span>
+        $linkUrl = self.$dialog.find('.note-link-url'),
+        $linkBtn = self.$dialog.find('.note-link-btn'),
+        $openInNewWindow = self.$dialog.find('input[type=checkbox]');
+&nbsp;
+<span class="cstat-no" title="statement not covered" >        ui.onDialogShown(self.$dialog, <span class="fstat-no" title="function not covered" >function () {</span></span>
+<span class="cstat-no" title="statement not covered" >          context.triggerEvent('dialog.shown');</span>
+&nbsp;
+          // if no url was given, copy text to url
+<span class="cstat-no" title="statement not covered" >          if (!linkInfo.url) {</span>
+<span class="cstat-no" title="statement not covered" >            linkInfo.url = linkInfo.text;</span>
+          }
+&nbsp;
+<span class="cstat-no" title="statement not covered" >          $linkText.val(linkInfo.text);</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >          var handleLinkTextUpdate = <span class="fstat-no" title="function not covered" >function () {</span></span>
+<span class="cstat-no" title="statement not covered" >            self.toggleLinkBtn($linkBtn, $linkText, $linkUrl);</span>
+            // if linktext was modified by keyup,
+            // stop cloning text from linkUrl
+<span class="cstat-no" title="statement not covered" >            linkInfo.text = $linkText.val();</span>
+          };
+&nbsp;
+<span class="cstat-no" title="statement not covered" >          $linkText.on('input', handleLinkTextUpdate).on('paste', <span class="fstat-no" title="function not covered" >function () {</span></span>
+<span class="cstat-no" title="statement not covered" >            setTimeout(handleLinkTextUpdate, 0);</span>
+          });
+&nbsp;
+<span class="cstat-no" title="statement not covered" >          var handleLinkUrlUpdate = <span class="fstat-no" title="function not covered" >function () {</span></span>
+<span class="cstat-no" title="statement not covered" >            self.toggleLinkBtn($linkBtn, $linkText, $linkUrl);</span>
+            // display same link on `Text to display` input
+            // when create a new link
+<span class="cstat-no" title="statement not covered" >            if (!linkInfo.text) {</span>
+<span class="cstat-no" title="statement not covered" >              $linkText.val($linkUrl.val());</span>
+            }
+          };
+&nbsp;
+<span class="cstat-no" title="statement not covered" >          $linkUrl.on('input', handleLinkUrlUpdate).on('paste', <span class="fstat-no" title="function not covered" >function () {</span></span>
+<span class="cstat-no" title="statement not covered" >            setTimeout(handleLinkUrlUpdate, 0);</span>
+          }).val(linkInfo.url).trigger('focus');
+&nbsp;
+<span class="cstat-no" title="statement not covered" >          self.toggleLinkBtn($linkBtn, $linkText, $linkUrl);</span>
+<span class="cstat-no" title="statement not covered" >          self.bindEnterKey($linkUrl, $linkBtn);</span>
+<span class="cstat-no" title="statement not covered" >          self.bindEnterKey($linkText, $linkBtn);</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >          $openInNewWindow.prop('checked', linkInfo.isNewWindow);</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >          $linkBtn.one('click', <span class="fstat-no" title="function not covered" >function (event) {</span></span>
+<span class="cstat-no" title="statement not covered" >            event.preventDefault();</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >            deferred.resolve({</span>
+              range: linkInfo.range,
+              url: $linkUrl.val(),
+              text: $linkText.val(),
+              isNewWindow: $openInNewWindow.is(':checked')
+            });
+<span class="cstat-no" title="statement not covered" >            self.$dialog.modal('hide');</span>
+          });
+        });
+&nbsp;
+<span class="cstat-no" title="statement not covered" >        ui.onDialogHidden(self.$dialog, <span class="fstat-no" title="function not covered" >function () {</span></span>
+          // detach events
+<span class="cstat-no" title="statement not covered" >          $linkText.off('input paste keypress');</span>
+<span class="cstat-no" title="statement not covered" >          $linkUrl.off('input paste keypress');</span>
+<span class="cstat-no" title="statement not covered" >          $linkBtn.off('click');</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >          if (deferred.state() === 'pending') {</span>
+<span class="cstat-no" title="statement not covered" >            deferred.reject();</span>
+          }
+        });
+&nbsp;
+<span class="cstat-no" title="statement not covered" >        ui.showDialog(self.$dialog);</span>
+      }).promise();
+    };
+&nbsp;
+    /**
+     * @param {Object} layoutInfo
+     */
+    this.show = <span class="fstat-no" title="function not covered" >function () {</span>
+<span class="cstat-no" title="statement not covered" >      var linkInfo = context.invoke('editor.getLinkInfo');</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >      context.invoke('editor.saveRange');</span>
+<span class="cstat-no" title="statement not covered" >      this.showLinkDialog(linkInfo).then(<span class="fstat-no" title="function not covered" >function (linkInfo) {</span></span>
+<span class="cstat-no" title="statement not covered" >        context.invoke('editor.restoreRange');</span>
+<span class="cstat-no" title="statement not covered" >        context.invoke('editor.createLink', linkInfo);</span>
+      }).fail(<span class="fstat-no" title="function not covered" >function () {</span>
+<span class="cstat-no" title="statement not covered" >        context.invoke('editor.restoreRange');</span>
+      });
+    };
+    context.memo('help.linkDialog.show', options.langInfo.help['linkDialog.show']);
+  };
+&nbsp;
+  return LinkDialog;
+});
+&nbsp;</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="http://istanbul-js.org/" target="_blank">istanbul</a> at Sun Dec 04 2016 03:43:24 GMT+0530 (IST)
+</div>
+</div>
+<script src="../../../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../../../sorter.js"></script>
+</body>
+</html>

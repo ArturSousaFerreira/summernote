@@ -1,0 +1,719 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for js/base/Context.js</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../prettify.css" />
+    <link rel="stylesheet" href="../../base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="../../index.html">all files</a> / <a href="index.html">js/base/</a> Context.js
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">93.86% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>107/114</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">81.82% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>45/55</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">96% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>24/25</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">93.86% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>107/114</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line high'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112
+113
+114
+115
+116
+117
+118
+119
+120
+121
+122
+123
+124
+125
+126
+127
+128
+129
+130
+131
+132
+133
+134
+135
+136
+137
+138
+139
+140
+141
+142
+143
+144
+145
+146
+147
+148
+149
+150
+151
+152
+153
+154
+155
+156
+157
+158
+159
+160
+161
+162
+163
+164
+165
+166
+167
+168
+169
+170
+171
+172
+173
+174
+175
+176
+177
+178
+179
+180
+181
+182
+183
+184
+185
+186
+187
+188
+189
+190
+191
+192
+193
+194
+195
+196
+197
+198
+199
+200
+201
+202
+203
+204
+205
+206
+207
+208
+209
+210
+211
+212
+213
+214
+215
+216
+217
+218
+219</td><td class="line-coverage quiet"><span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">34×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">34×</span>
+<span class="cline-any cline-yes">34×</span>
+<span class="cline-any cline-yes">34×</span>
+<span class="cline-any cline-yes">34×</span>
+<span class="cline-any cline-yes">34×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">34×</span>
+<span class="cline-any cline-yes">43×</span>
+<span class="cline-any cline-yes">43×</span>
+<span class="cline-any cline-yes">43×</span>
+<span class="cline-any cline-yes">43×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">34×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">34×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">34×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">44×</span>
+<span class="cline-any cline-yes">44×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">44×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">44×</span>
+<span class="cline-any cline-yes">880×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">44×</span>
+<span class="cline-any cline-yes">880×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">34×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2×</span>
+<span class="cline-any cline-yes">40×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2×</span>
+<span class="cline-any cline-yes">146×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">34×</span>
+<span class="cline-any cline-yes">6×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">6×</span>
+<span class="cline-any cline-yes">2×</span>
+<span class="cline-any cline-yes">2×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">4×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">4×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">4×</span>
+<span class="cline-any cline-yes">4×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">34×</span>
+<span class="cline-any cline-yes">7×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">34×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">34×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">3×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">3×</span>
+<span class="cline-any cline-yes">3×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">34×</span>
+<span class="cline-any cline-yes">119×</span>
+<span class="cline-any cline-yes">119×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">119×</span>
+<span class="cline-any cline-yes">119×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">119×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">34×</span>
+<span class="cline-any cline-yes">880×</span>
+<span class="cline-any cline-yes">880×</span>
+<span class="cline-any cline-yes">880×</span>
+<span class="cline-any cline-yes">176×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">704×</span>
+<span class="cline-any cline-yes">616×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">704×</span>
+<span class="cline-any cline-yes">176×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">34×</span>
+<span class="cline-any cline-yes">880×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">880×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">880×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">34×</span>
+<span class="cline-any cline-yes">40×</span>
+<span class="cline-any cline-yes">40×</span>
+<span class="cline-any cline-yes">32×</span>
+<span class="cline-any cline-yes">8×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">32×</span>
+<span class="cline-any cline-yes">30×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">40×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">34×</span>
+<span class="cline-any cline-yes">5590×</span>
+<span class="cline-any cline-yes">2378×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">3212×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">34×</span>
+<span class="cline-any cline-yes">146×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">146×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">34×</span>
+<span class="cline-any cline-yes">1366×</span>
+<span class="cline-any cline-yes">6×</span>
+<span class="cline-any cline-yes">6×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">34×</span>
+<span class="cline-any cline-yes">504×</span>
+<span class="cline-any cline-yes">504×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">504×</span>
+<span class="cline-any cline-yes">504×</span>
+<span class="cline-any cline-yes">504×</span>
+<span class="cline-any cline-yes">504×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">504×</span>
+<span class="cline-any cline-yes">504×</span>
+<span class="cline-any cline-yes">2×</span>
+<span class="cline-any cline-yes">502×</span>
+<span class="cline-any cline-yes">502×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">34×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">define([
+  'jquery',
+  'summernote/base/core/func',
+  'summernote/base/core/list',
+  'summernote/base/core/dom'
+], function ($, func, list, dom) {
+  /**
+   * @param {jQuery} $note
+   * @param {Object} options
+   * @return {Context}
+   */
+  var Context = function ($note, options) {
+    var self = this;
+&nbsp;
+    var ui = $.summernote.ui;
+    this.memos = {};
+    this.modules = {};
+    this.layoutInfo = {};
+    this.options = options;
+&nbsp;
+    /**
+     * create layout and initialize modules and other resources
+     */
+    this.initialize = function () {
+      this.layoutInfo = ui.createLayout($note, options);
+      this._initialize();
+      $note.hide();
+      return this;
+    };
+&nbsp;
+    /**
+     * destroy modules and other resources and remove layout
+     */
+    this.destroy = function () {
+      this._destroy();
+      $note.removeData('summernote');
+      ui.removeLayout($note, this.layoutInfo);
+    };
+&nbsp;
+    /**
+     * destory modules and other resources and initialize it again
+     */
+    this.reset = function () {
+      var disabled = self.isDisabled();
+      this.code(dom.emptyPara);
+      this._destroy();
+      this._initialize();
+&nbsp;
+      <span class="missing-if-branch" title="else path not taken" >E</span>if (disabled) {
+        self.disable();
+      }
+    };
+&nbsp;
+    this._initialize = function () {
+      // add optional buttons
+      var buttons = $.extend({}, this.options.buttons);
+      Object.keys(buttons).forEach(<span class="fstat-no" title="function not covered" >function (key) {</span>
+<span class="cstat-no" title="statement not covered" >        self.memo('button.' + key, buttons[key]);</span>
+      });
+&nbsp;
+      var modules = $.extend({}, this.options.modules, $.summernote.plugins || <span class="branch-1 cbranch-no" title="branch not covered" >{})</span>;
+&nbsp;
+      // add and initialize modules
+      Object.keys(modules).forEach(function (key) {
+        self.module(key, modules[key], true);
+      });
+&nbsp;
+      Object.keys(this.modules).forEach(function (key) {
+        self.initializeModule(key);
+      });
+    };
+&nbsp;
+    this._destroy = function () {
+      // destroy modules with reversed order
+      Object.keys(this.modules).reverse().forEach(function (key) {
+        self.removeModule(key);
+      });
+&nbsp;
+      Object.keys(this.memos).forEach(function (key) {
+        self.removeMemo(key);
+      });
+    };
+&nbsp;
+    this.code = function (html) {
+      var isActivated = this.invoke('codeview.isActivated');
+&nbsp;
+      if (html === undefined) {
+        this.invoke('codeview.sync');
+        return isActivated ? <span class="branch-0 cbranch-no" title="branch not covered" >this.layoutInfo.codable.val() </span>: this.layoutInfo.editable.html();
+      } else {
+        <span class="missing-if-branch" title="if path not taken" >I</span>if (isActivated) {
+<span class="cstat-no" title="statement not covered" >          this.layoutInfo.codable.val(html);</span>
+        } else {
+          this.layoutInfo.editable.html(html);
+        }
+        $note.val(html);
+        this.triggerEvent('change', html);
+      }
+    };
+&nbsp;
+    this.isDisabled = function () {
+      return this.layoutInfo.editable.attr('contenteditable') === 'false';
+    };
+&nbsp;
+    this.enable = function () {
+      this.layoutInfo.editable.attr('contenteditable', true);
+      this.invoke('toolbar.activate', true);
+    };
+&nbsp;
+    this.disable = function () {
+      // close codeview if codeview is opend
+      <span class="missing-if-branch" title="if path not taken" >I</span>if (this.invoke('codeview.isActivated')) {
+<span class="cstat-no" title="statement not covered" >        this.invoke('codeview.deactivate');</span>
+      }
+      this.layoutInfo.editable.attr('contenteditable', false);
+      this.invoke('toolbar.deactivate', true);
+    };
+&nbsp;
+    this.triggerEvent = function () {
+      var namespace = list.head(arguments);
+      var args = list.tail(list.from(arguments));
+&nbsp;
+      var callback = this.options.callbacks[func.namespaceToCamel(namespace, 'on')];
+      <span class="missing-if-branch" title="if path not taken" >I</span>if (callback) {
+<span class="cstat-no" title="statement not covered" >        callback.apply($note[0], args);</span>
+      }
+      $note.trigger('summernote.' + namespace, args);
+    };
+&nbsp;
+    this.initializeModule = function (key) {
+      var module = this.modules[key];
+      module.shouldInitialize = module.shouldInitialize || func.ok;
+      if (!module.shouldInitialize()) {
+        return;
+      }
+&nbsp;
+      // initialize module
+      if (module.initialize) {
+        module.initialize();
+      }
+&nbsp;
+      // attach events
+      if (module.events) {
+        dom.attachEvents($note, module.events);
+      }
+    };
+&nbsp;
+    this.module = function (key, ModuleClass, withoutIntialize) {
+      <span class="missing-if-branch" title="if path not taken" >I</span>if (arguments.length === 1) {
+<span class="cstat-no" title="statement not covered" >        return this.modules[key];</span>
+      }
+&nbsp;
+      this.modules[key] = new ModuleClass(this);
+&nbsp;
+      <span class="missing-if-branch" title="if path not taken" >I</span>if (!withoutIntialize) {
+<span class="cstat-no" title="statement not covered" >        this.initializeModule(key);</span>
+      }
+    };
+&nbsp;
+    this.removeModule = function (key) {
+      var module = this.modules[key];
+      if (module.shouldInitialize()) {
+        if (module.events) {
+          dom.detachEvents($note, module.events);
+        }
+&nbsp;
+        if (module.destroy) {
+          module.destroy();
+        }
+      }
+&nbsp;
+      delete this.modules[key];
+    };
+&nbsp;
+    this.memo = function (key, obj) {
+      if (arguments.length === 1) {
+        return this.memos[key];
+      }
+      this.memos[key] = obj;
+    };
+&nbsp;
+    this.removeMemo = function (key) {
+      <span class="missing-if-branch" title="if path not taken" >I</span>if (this.memos[key] &amp;&amp; this.memos[key].destroy) {
+<span class="cstat-no" title="statement not covered" >        this.memos[key].destroy();</span>
+      }
+&nbsp;
+      delete this.memos[key];
+    };
+&nbsp;
+    this.createInvokeHandler = function (namespace, value) {
+      return function (event) {
+        event.preventDefault();
+        self.invoke(namespace, value || $(event.target).closest('[data-value]').data('value'));
+      };
+    };
+&nbsp;
+    this.invoke = function () {
+      var namespace = list.head(arguments);
+      var args = list.tail(list.from(arguments));
+&nbsp;
+      var splits = namespace.split('.');
+      var hasSeparator = splits.length &gt; 1;
+      var moduleName = hasSeparator &amp;&amp; list.head(splits);
+      var methodName = hasSeparator ? list.last(splits) : list.head(splits);
+&nbsp;
+      var module = this.modules[moduleName || 'editor'];
+      if (!moduleName &amp;&amp; this[methodName]) {
+        return this[methodName].apply(this, args);
+      } else <span class="missing-if-branch" title="else path not taken" >E</span>if (module &amp;&amp; module[methodName] &amp;&amp; module.shouldInitialize()) {
+        return module[methodName].apply(module, args);
+      }
+    };
+&nbsp;
+    return this.initialize();
+  };
+&nbsp;
+  return Context;
+});
+&nbsp;</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="http://istanbul-js.org/" target="_blank">istanbul</a> at Sun Dec 04 2016 03:43:24 GMT+0530 (IST)
+</div>
+</div>
+<script src="../../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../../sorter.js"></script>
+</body>
+</html>
