@@ -11,6 +11,13 @@
 <a name="Introduction"> </a>
 ## Introduction
 
+Since Summernote is a project still growing and evolving, there is still 
+a large list of tasks and features to be developed and problems to be corrected. 
+However, the project is open to the development of new features as long 
+as its interest for the relevant project. Throughout this report will 
+be described the process of identification, development and submission 
+of a new feature of the Summernote project.
+
 <a name="DiscussSoftwareMaintainability"> </a>
 ## Discuss Software Maintainability
 
