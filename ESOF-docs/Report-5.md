@@ -48,15 +48,27 @@ ten guidelines in a more evident and list layout way.
 <a name="Reportevolutionprocess">
 ## Report evolution process
 
-1. Briefly describe how the feature you decided to evolve was identified;
-2. why you decide to evolve that particular feature? 
-3. How did you locate the parts in the source code that needed to be modified.  
+#### Feature decision
+
+The Summernote project repository provides a wide range of issues that are fed by its
+employees, as has been mentioned in previous reports. After a careful analysis of it, 
+the group decided to evolve a feature that is based on issue #1885, which is the most recent 
+feature , at the date of this report.
+
+We wanted to chose a feature that was intended about a relatively short time and for that we
+search about date and with two labels: `feature-request` and `pull-request-wanted`.
+
+#### Identification of components implementing the feature  
+
+While running the Summernote in the browser, in this case we use Google Chrome, we
+detect some active components by using the code inspector on that browser. 
 
 [Go to top](#TOP)
 <a name="Linktopullrequest"> </a>
 ## Link to pull request
 
-Link to pull request
+After the implementation of the new feature we've made a pull request in order
+to integrate it into the Summernote library. It's available and it's visible here.
 
 [Go to top](#TOP)
 <a name="Group"> </a>
