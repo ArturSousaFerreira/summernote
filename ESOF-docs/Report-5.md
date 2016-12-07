@@ -48,10 +48,15 @@ ten guidelines in a more evident and list layout way.
 <a name="Reportevolutionprocess">
 ## Report evolution process
 
+1. Briefly describe how the feature you decided to evolve was identified;
+2. why you decide to evolve that particular feature? 
+3. How did you locate the parts in the source code that needed to be modified.  
+
 [Go to top](#TOP)
 <a name="Linktopullrequest"> </a>
 ## Link to pull request
 
+Link to pull request
 
 [Go to top](#TOP)
 <a name="Group"> </a>
