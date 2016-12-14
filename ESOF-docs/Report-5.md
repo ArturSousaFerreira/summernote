@@ -46,7 +46,6 @@ To get more detailed information we provide a [link](resources/BetterCodeHub.pdf
 
 #### Feature decision
 
-<<<<<<< HEAD
 The Summernote project repository provides a wide range of issues that are fed by the team members and by the community, as has been mentioned in previous reports. We wanted to chose a feature that was intended about a relatively short time and for that we search about date and with two labels: `feature-request` and `pull-request-wanted`.
 
 After a careful analysis of this list, the group decided to evolve a feature that is based on issue #1885, which is the most recent feature, at the date of this report. The feature-request primarily wants the editor to be able to input colors for its foreground and background by `hexadecimal` format. The feature seemed important and was yet lacking in the original software.
@@ -62,13 +61,6 @@ The feature required only to input color in hexadecimal format. But while search
 Thus, through a thorough analysis of the code, its syntax and indentation, we formulated the code and made it work after several attempts. And hence, the feature was implemented. A preview of the feature can be seen here:
 
 ![Feature html5 color input](resources/feature.png?raw=true "Feature html5 color input")
-=======
-The Summernote project repository provides a wide range of issues that are fed by its team members and also by its users community. After a careful analysis of this list, the group decided to evolve a feature that is based on the issue [#1885](https://github.com/summernote/summernote/issues/1885), which is, at the date of this report, the most recently commented feature, also tagged both as `feature-request` and `pull-request-wanted`. The feature selected appeared to us to be relatively simple of interpretation and consequent implementation.
-
-#### Identification of components implementing the feature  
-
-While running a example page of the Summernote in the Google Chrome browser, we detected the relevant active code components by using the code inspector tool. After a preliminary analysis of the visual components (GUI) involved in the changing the color of the text of its foreground, we proceeded to try to come up with a new interface to the new select color by its hexadecimal value feature. After browsing through the web for similar features, we realized that there is in fact a [html5](https://www.w3.org/TR/html5/forms.html#color-state-%28type=color%29) friendly feature that uses the browser/OS native color picker to allow the user to select the desired color. Unfortunately this `type=color` feature is not supported in Internet Explorer, and to the user only a regular input box is presented.
->>>>>>> 0811ce31a9af3e65c1261a3e45e3560a27090f9d
 
 [Go to top](#TOP)
 <a name="Linktopullrequest"> </a>
