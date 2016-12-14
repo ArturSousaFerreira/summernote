@@ -27,11 +27,13 @@ Below are shown the results this tool generated in the same order presented to u
 5. :heavy_check_mark: Separate concerns in modules
 6. :heavy_check_mark: Couple Architecture Components Loosely
 7. :heavy_check_mark: Keep architecture components balanced
-8. :heavy_check_mark: Keep your codebase small
-#####9. :x: Automate Tests
+##### 8. :heavy_check_mark: Keep your codebase small
+The results show that the codebase is indeed kept small. This assessment is made by comparing the total project code lines into a Man-months effort measuring unit that represents the average productivity of a single programmer translated into lines of code. A possible reason for the good result might be the use of external libraries like Bootstrap and jQuery, which reduces codebase size, improving maintainability.
+
+##### 9. :x: Automate Tests
 Although the Better Code Hub classified the automation tests as a failure, in reality, as was discussed in the previous report, the PhantomJS test framework is being used and the code coverage is relatively higher than shown in this results (70% compared to 47%). It can be said that in this case the test code coverage seems to be directly comparing lines of code with testing code lines. As it detected the project had more than 10000 line of code, it expected the total lines of test code to be at least 50% of that which in this case it is not.
 
-#####10. :heavy_check_mark: Write clean code
+##### 10. :heavy_check_mark: Write clean code
 This is a passing test indicating that most source files comply with the good practices in keeping the code clean and maintainable, such as not leaving unit level code smells behind, no bad comments, no code in comments, no dead code, no long identifiers behind, no magic constants behind and no badly handled exceptions. Analysing a refactoring candidate like summernote.js it is possible to quickly conclude that due to its line code size it is indeed the core of summernote and contains the most important functions and although has been kept relatively organized, it does indeed still present some code smells like bad comments and long identifiers.
 
 The project achieved a compliance classification of 6 out of 10, in such a way that we've got a badge of [![BCH compliance](https://bettercodehub.com/edge/badge/ei12134/summernote)](https://bettercodehub.com) proving it.
