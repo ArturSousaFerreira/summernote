@@ -25,6 +25,14 @@ Below are shown the results this tool generated in the same order presented to u
 
 ##### 1. :x: Write Short Units of Code
 ##### 2. :x: Write Simple Units of Code
+
+
+We read about writing simple units of code and we agree in one thing: it's very important to get things simple. Is it possible to achieve?
+Our response is yes. Well, in this case we need to reduce complexity by extracting sub-branches to separate units of no more than 4 branch(if, for, while, etc).
+
+Of course, we are the opinion that the overall (McCabe) complexity of a system will not decrease by refactoring a method into several new methods. 
+But from a maintainability perspective, a simple unit is easier to understand, and thus modify, than a complex one and simple units ease testing.
+
 ##### 3. :x: Write Code Once
 ##### 4. :heavy_check_mark: Keep unit interfaces small
 ##### 5. :heavy_check_mark: Separate concerns in modules
