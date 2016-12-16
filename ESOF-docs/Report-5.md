@@ -20,13 +20,13 @@ We have ran the Better Codehub, later we call only BC, tool to check ten guideli
 
 Below are shown the results this tool generated in the same order presented to us. 
 
-1. :x: Write Short Units of Code
-2. :x: Write Simple Units of Code
-3. :x: Write Code Once
-4. :heavy_check_mark: Keep unit interfaces small
-5. :heavy_check_mark: Separate concerns in modules
-6. :heavy_check_mark: Couple Architecture Components Loosely
-7. :heavy_check_mark: Keep architecture components balanced
+##### 1. :x: Write Short Units of Code
+##### 2. :x: Write Simple Units of Code
+##### 3. :x: Write Code Once
+##### 4. :heavy_check_mark: Keep unit interfaces small
+##### 5. :heavy_check_mark: Separate concerns in modules
+##### 6. :heavy_check_mark: Couple Architecture Components Loosely
+##### 7. :heavy_check_mark: Keep architecture components balanced
 
 ##### 8. :heavy_check_mark: Keep your codebase small
 The results show that the codebase is indeed kept small. This assessment is made by comparing the total project code lines into a Man-months effort measuring unit that represents the average productivity of a single programmer translated into lines of code. A possible reason for the good result might be the use of external libraries like Bootstrap and jQuery, which reduces codebase size, improving maintainability.
