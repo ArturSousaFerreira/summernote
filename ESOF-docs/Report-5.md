@@ -38,7 +38,7 @@ Our response is yes. Well, in this case we need to reduce complexity by extracti
 Of course, we are the opinion that the overall (McCabe) complexity of a system will not decrease by refactoring a method into several new methods. 
 But from a maintainability perspective, a simple unit is easier to understand, and thus modify, than a complex one and simple units ease testing.
 
-##### 3. :x: Write Code Once
+##### 3. :x: Write code once
 
 Better Code Hub rated the Write Code Once tests as a failure and by analyzing the list that contains the top 30 of units that violate this test 
 guidelines, we confirm that summernote code has some duplicated code. That's a bad methedology for bugs beacuse we need to fix in multiple places. This is both 
@@ -53,12 +53,11 @@ Furthermore, it's important to reserve that large interfaces are not the problem
 test we can predict some poor data model or ad hoc code modification. So, we `"can view interface size as a code smell, to see whether your data model needs improvement."`
 
 ##### 5. :heavy_check_mark: Separate concerns in modules
+Like we analized in others reports, Summernote is very well organised in modules. It is very important to minimize the consequences of 
+changes and it's easier to understand the locations of functions to other developers don't get lost.
 
 ##### 6. :heavy_check_mark: Couple architecture components loosely
 The tool positively classified the architecture as easy to maintain because changes made within a component have effects that are isolated within that component, also meaning there is a low number of incoming calls per component and there is little to no throughput code. The Better Code Hub classified all the code as hidden code.
-
-Like we analized in others reports, Summernote is very well organised in modules. It is very important to minimize the consequences of 
-changes and it's easier to understand the locations of functions to other developers don't get lost.
 
 ##### 7. :heavy_check_mark: Keep architecture components balanced
 The tool acknowledges a correct balancing of the existing components size. It detected 7 components and classified their size uniformity as 0.61. This fits well with the recommendation of organizing the source code into 2 to 12 components with approximate sizes, so it is easier to locate the code and also helps when wanting to make isolated component maintenance.
