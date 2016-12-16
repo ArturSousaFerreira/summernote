@@ -33,7 +33,7 @@ sometimes it's impossible.
 ##### 2. :x: Write Simple Units of Code
 
 We read about writing simple units of code and we agree in one thing: it's very important to get things simple. Is it possible to achieve?
-Our response is yes. Well, in this case we need to reduce complexity by extracting sub-branches to separate units of no more than 4 branch(if, for, while, etc).
+Our response is yes. Well, in this case we need to reduce complexity by extracting sub-branches to separate units of no more than 4 branchs(if, for, while, etc).
 
 Of course, we are the opinion that the overall (McCabe) complexity of a system will not decrease by refactoring a method into several new methods. 
 But from a maintainability perspective, a simple unit is easier to understand, and thus modify, than a complex one and simple units ease testing.
@@ -45,6 +45,13 @@ guidelines, we confirm that summernote code has some duplicated code. That's a b
 inefficient and error-prone. We should avoid duplication by never copy/pasting blocks of code.
 
 ##### 4. :heavy_check_mark: Keep unit interfaces small
+
+We are happy to say all methods that are used in the project have small interfaces. A small interface is considered when we have at most 4 parameters per unit.
+This implies interfaces changes easier to modify. 
+
+Furthermore, it's important to reserve that large interfaces are not the problem, but rather are indicators of the actual problem. When some project hasn't pass this 
+test we can predict some poor data model or ad hoc code modification. So, we `"can view interface size as a code smell, to see whether your data model needs improvement."`
+
 ##### 5. :heavy_check_mark: Separate concerns in modules
 
 Like we analized in others reports, Summernote is very well organised in modules. It is very important to minimize the consequences of 
