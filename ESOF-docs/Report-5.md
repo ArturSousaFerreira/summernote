@@ -17,6 +17,8 @@ Since Summernote is a project still growing and evolving, there is still a large
 ## Discuss Software Maintainability
 
 We have ran the Better Codehub, later we call only BC, tool to check ten guidelines for maintainable software in the Summernote project.
+Behind BC is the software improvement group, or SIG for short. SIG is a management consultancy firm that has several clients, namely, 
+KLM and Rabobank, for example. This gives us confidence in the tool we are using.  
 
 The project achieved a compliance classification of 6 out of 10, in such a way that we've got a badge of [![BCH compliance](https://bettercodehub.com/edge/badge/ei12134/summernote)](https://bettercodehub.com) proving it.
 To get more detailed information we provide a [link](resources/BetterCodeHub.pdf) to a pdf file that shows the ten guidelines in a list layout way.
