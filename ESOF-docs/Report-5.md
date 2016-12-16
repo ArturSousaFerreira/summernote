@@ -46,14 +46,17 @@ inefficient and error-prone. We should avoid duplication by never copy/pasting b
 
 ##### 4. :heavy_check_mark: Keep unit interfaces small
 ##### 5. :heavy_check_mark: Separate concerns in modules
-##### 6. :heavy_check_mark: Couple Architecture Components Loosely
+##### 6. :heavy_check_mark: Couple architecture components loosely
+The tool positively classified the architecture as easy to maintain because changes made within a component have effects that are isolated within that component, also meaning there is a low number of incoming calls per component and there is little to no throughput code. The Better Code Hub classified all the code as hidden code.
+
 ##### 7. :heavy_check_mark: Keep architecture components balanced
+The tool acknowledges a correct balancing of the existing components size. It detected 7 components and classified their size uniformity as 0.61. This fits well with the recommendation of organizing the source code into 2 to 12 components with approximate sizes, so it is easier to locate the code and also helps when wanting to make isolated component maintenance.
 
 ##### 8. :heavy_check_mark: Keep your codebase small
 The results show that the codebase is indeed kept small. This assessment is made by comparing the total project code lines into a Man-months effort measuring unit that represents the average productivity of a single programmer translated into lines of code. A possible reason for the good result might be the use of external libraries like Bootstrap and jQuery, which reduces codebase size, improving maintainability.
 
-##### 9. :x: Automate Tests
-Although the Better Code Hub classified the automation tests as a failure, in reality, as was discussed in the previous report, the PhantomJS test framework is being used and the code coverage is relatively higher than shown in this results (70% compared to 47%). It can be said that in this case the test code coverage seems to be directly comparing lines of code with testing code lines. As it detected the project had more than 10000 line of code, it expected the total lines of test code to be at least 50% of that which in this case it is not.
+##### 9. :x: Automate tests
+Although the Better Code Hub classified the automation tests as a failure, in reality, as was discussed in the previous report, the PhantomJS test framework is being used and the code coverage is relatively higher than shown in this results (70% compared to 47%). It can be said that in this case the test code coverage seems to be directly comparing lines of code with testing code lines. As it detected the project had more than 10000 line of code, it expected the total lines of test code to be at least 50% of that which in this case it isn't.
 
 ##### 10. :heavy_check_mark: Write clean code
 This is a passing test indicating that most source files comply with the good practices in keeping the code clean and maintainable, such as not leaving unit level code smells behind, no bad comments, no code in comments, no dead code, no long identifiers behind, no magic constants behind and no badly handled exceptions. Analysing a refactoring candidate like summernote.js it is possible to quickly conclude that due to its line code size it is indeed the core of summernote and contains the most important functions and although has been kept relatively organized, it does indeed still present some code smells like bad comments and long identifiers.
