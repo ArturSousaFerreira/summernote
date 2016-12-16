@@ -46,6 +46,10 @@ inefficient and error-prone. We should avoid duplication by never copy/pasting b
 
 ##### 4. :heavy_check_mark: Keep unit interfaces small
 ##### 5. :heavy_check_mark: Separate concerns in modules
+
+Like we analized in others reports, Summernote is very well organised in modules. It is very important to minimize the consequences of 
+changes and it's easier to understand the locations of functions to other developers don't get lost.
+
 ##### 6. :heavy_check_mark: Couple Architecture Components Loosely
 ##### 7. :heavy_check_mark: Keep architecture components balanced
 
