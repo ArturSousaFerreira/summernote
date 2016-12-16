@@ -24,8 +24,13 @@ To get more detailed information we provide a [link](resources/BetterCodeHub.pdf
 Below are shown the results this tool generated in the same order presented to us. 
 
 ##### 1. :x: Write Short Units of Code
-##### 2. :x: Write Simple Units of Code
 
+Although the Better Code Hub rated the Write Short Units of Code tests as a failure, in reality, 
+by analyzing the list that contains the top 30 of units that violate this test guidelines, we confirm that most of units above 15 lines of code can't 
+be splitted in smaller units. When writing new units, we can't let them grow above 15 lines of code, when they pass this size we should split, but 
+sometimes it's impossible. 
+
+##### 2. :x: Write Simple Units of Code
 
 We read about writing simple units of code and we agree in one thing: it's very important to get things simple. Is it possible to achieve?
 Our response is yes. Well, in this case we need to reduce complexity by extracting sub-branches to separate units of no more than 4 branch(if, for, while, etc).
@@ -34,6 +39,11 @@ Of course, we are the opinion that the overall (McCabe) complexity of a system w
 But from a maintainability perspective, a simple unit is easier to understand, and thus modify, than a complex one and simple units ease testing.
 
 ##### 3. :x: Write Code Once
+
+Better Code Hub rated the Write Code Once tests as a failure and by analyzing the list that contains the top 30 of units that violate this test 
+guidelines, we confirm that summernote code has some duplicated code. That's a bad methedology for bugs beacuse we need to fix in multiple places. This is both 
+inefficient and error-prone. We should avoid duplication by never copy/pasting blocks of code.
+
 ##### 4. :heavy_check_mark: Keep unit interfaces small
 ##### 5. :heavy_check_mark: Separate concerns in modules
 ##### 6. :heavy_check_mark: Couple Architecture Components Loosely
