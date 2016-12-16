@@ -18,6 +18,9 @@ Since Summernote is a project still growing and evolving, there is still a large
 
 We have ran the Better Codehub, later we call only BC, tool to check ten guidelines for maintainable software in the Summernote project.
 
+The project achieved a compliance classification of 6 out of 10, in such a way that we've got a badge of [![BCH compliance](https://bettercodehub.com/edge/badge/ei12134/summernote)](https://bettercodehub.com) proving it.
+To get more detailed information we provide a [link](resources/BetterCodeHub.pdf) to a pdf file that shows the ten guidelines in a list layout way.
+
 Below are shown the results this tool generated in the same order presented to us. 
 
 ##### 1. :x: Write Short Units of Code
@@ -36,9 +39,6 @@ Although the Better Code Hub classified the automation tests as a failure, in re
 
 ##### 10. :heavy_check_mark: Write clean code
 This is a passing test indicating that most source files comply with the good practices in keeping the code clean and maintainable, such as not leaving unit level code smells behind, no bad comments, no code in comments, no dead code, no long identifiers behind, no magic constants behind and no badly handled exceptions. Analysing a refactoring candidate like summernote.js it is possible to quickly conclude that due to its line code size it is indeed the core of summernote and contains the most important functions and although has been kept relatively organized, it does indeed still present some code smells like bad comments and long identifiers.
-
-The project achieved a compliance classification of 6 out of 10, in such a way that we've got a badge of [![BCH compliance](https://bettercodehub.com/edge/badge/ei12134/summernote)](https://bettercodehub.com) proving it.
-To get more detailed information we provide a [link](resources/BetterCodeHub.pdf) to a pdf file that shows the ten guidelines in a list layout way.
 
 [Go to top](#TOP)
 <a name="Reportevolutionprocess">
