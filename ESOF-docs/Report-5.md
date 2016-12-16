@@ -70,6 +70,9 @@ Although the BC classified the automation tests as a failure, in reality, as was
 ##### 10. :heavy_check_mark: Write clean code
 This is a passing test indicating that most source files comply with the good practices in keeping the code clean and maintainable, such as not leaving unit level code smells behind, no bad comments, no code in comments, no dead code, no long identifiers behind, no magic constants behind and no badly handled exceptions. Analysing a refactoring candidate like Summernote.js it is possible to quickly conclude that due to its line code size it is indeed the core of Summernote and contains the most important functions and although has been kept relatively organized, it does indeed still present some code smells like bad comments and long identifiers.
 
+##### Final note:
+Although BC is a tool in the BETA version has very interesting features. Nowadays, a good organization according to the principles of software engineering is fundamental in the development of small, medium and large projects. As future computer engineers it was important to have this first contact with this tool and we are sure that we will monitor its growth in the future.
+
 [Go to top](#TOP)
 <a name="Reportevolutionprocess">
 ## Report evolution process
