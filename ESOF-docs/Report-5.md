@@ -83,7 +83,7 @@ Although [BC](https://bettercodehub.com/) is a tool in the BETA version, it has 
 
 The [Summernote](http://summernote.org/) project repository provides a wide range of issues that are fed by the team members and by the community, as has been mentioned in previous reports. We wanted to chose a feature that was intended about a relatively short time and for that we search about date and with two labels: `feature-request` and `pull-request-wanted`.
 
-After a careful analysis of this list, the group decided to evolve a feature that is based on issue #1885, which is the most recent feature, at the date of this report. The feature-request primarily wants the editor to be able to input colors for its foreground and background by `hexadecimal` format. The feature seemed important and was yet lacking in the original software.
+After a careful analysis of this list, the group decided to evolve a feature that is based on issue [#1885](https://github.com/summernote/summernote/issues/1885), which is the most recent feature, at the date of this report. The feature-request primarily wants the editor to be able to input colors for its foreground and background by `hexadecimal` format. The feature seemed important and was yet lacking in the original software.
 
 #### Identification of components implementing the feature  
 
